@@ -11,49 +11,50 @@
     <body>
         <header>
             <nav>
-                <figure class="logo">
-                    <img src="" alt="">
-                </figure>
                 <ul class="menu__navegacao">
-                    <li>Sobre Mim</li>
-                    <li>Skills</li>
-                    <li>Hobbies</li>
-                    <li>Formacao</li>
-                    <li>Projetos</li>
+                    <li class="menu__navegacao__ajuste"><a href="#sobreMim">Sobre Mim</a></li>
+                    <li class="menu__navegacao__ajuste"><a href="#skills">Skills</a></li>
+                    <li class="menu__navegacao__ajuste"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__navegacao__ajuste"><a href="#formacao">Formação</a></li>
+                    <li class="menu__navegacao__ajuste"><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <hero>
+            <section class="hero">
                 <section class="hero__conteudo">
-                    <h1>Eleve seu negócio digital a outro nível com um Front-end de qualidade!</h1>
-                    <p>Olá! Sou Diego Vieira, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+                    <h1 class="hero__conteudo__titulo">Eleve seu negócio digital a outro nível com um Front-end de qualidade!</h1>
+                    <p class="hero__conteudo__paragrafo">Olá! Sou Diego Vieira, <strong>desenvolvedor Front-end, HTML | CSS | Java Script.</strong>  Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
                     <ul class="hero__conteudo__links">
-                        <li>Currículo</li>
-                        <li>Github</li>
-                        <li>Linkedin</li>
-                        <li>Instagram</li>
-                        <li>Youtube</li>
-                        <li>Email</li>
+                        <li class="hero__conteudo__links__ajuste"><a href="">Currículo</a><img class="hero__link__imagem"></li>
+                        <li class="hero__conteudo__links__ajuste"><a href="">Email</a><img class="hero__link__imagem"></li>
+                        <li class="hero__conteudo__links__ajuste"><a href="">Github</a><img class="hero__link__imagem"></li>
+                        <li class="hero__conteudo__links__ajuste"><a href="">Linkedin</a><img class="hero__link__imagem"></li>
+                        <li class="hero__conteudo__links__ajuste"><a href="">Instagram</a><img class="hero__link__imagem"></li>
+                        <li class="hero__conteudo__links__ajuste"><a href="">Youtube</a><img class="hero__link__imagem"></li>
                     </ul>
                 </section>
                 <figure class="hero__conteudo__imagem"></figure>
-            </hero>
-            <section id="sobre__mim">
-                <h2>Sobre Mim</h2>
-                <p>Tenho 6 meses de experiência, focado em criar interfaces modernas e funcionais. Estou no 2º período de Análise e Desenvolvimento de Sistemas e já trabalhei com projetos utilizando HTML, CSS, JavaScript. Além disso, estou sempre aprimorando minhas habilidades com cursos e bootcamps, como a Imersão Dev da Alura, Bootcamp da Alura, Dev media. Meu objetivo é combinar design e código para entregar soluções eficientes e centradas para o usuário.</p>
             </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul class="container">
-                    <li class="container__conteudo">HTML</li>
-                    <li class="container__conteudo">CSS</li>
-                    <li class="container__conteudo">Java Script</li>
-                    <li class="container__conteudo">Git | Github</li>
-                    <li class="container__conteudo">Metodos Ágeis</li>
-                </ul>
+            <section id="sobreMim">
+                <header class="sobreMim__container">
+                    <h2 class="sobreMim__titulo">Sobre Mim</h2>
+                    <p class="sobreMim__paragrafo">Tenho 6 meses de experiência, focado em criar interfaces modernas e funcionais. Estou no 2º período de Análise e Desenvolvimento de Sistemas e já trabalhei com projetos utilizando HTML, CSS, JavaScript. Além disso, estou sempre aprimorando minhas habilidades com cursos e bootcamps, como a Imersão Dev da Alura, Bootcamp da Alura, Dev media. Meu objetivo é combinar design e código para entregar soluções eficientes e centradas para o usuário.</p>
+                </header>
+            </section>
+            <section class="skills__e__hobbies">
+                <div id="skills">
+                    <h2 class="hobbies__e__skills__titulo">Skills</h2>
+                    <ul class="container">
+                        <li class="container__conteudo">HTML</li>
+                        <li class="container__conteudo">CSS</li>
+                        <li class="container__conteudo">Java Script</li>
+                        <li class="container__conteudo">Git | Github</li>
+                        <li class="container__conteudo">Metodos Ágeis</li>
+                    </ul>
+                </div>
                 <div id="hobbies">
-                    <h2>Hobbies</h2>
+                    <h2 class="hobbies__e__skills__titulo">Hobbies</h2>
                     <ul class="container">
                         <li class="container__conteudo">Trilhas</li>
                         <li class="container__conteudo">Ouvir Música</li>
@@ -63,28 +64,40 @@
                     </ul>
                 </div>
                 <div id="formacao">
-                    <h2>Formação Academica</h2>
+                    <h2 class="formacao__titulo">Formação Academica</h2>
                     <ul class="formacao__conteudo">
-                        <li>Alura + Oracle Next Education</li>
-                        <li>Dev Media</li>
-                        <li>Uniasselvi</li>
+                        <li class="formacao__container">Alura + Oracle Next Education</li>
+                        <li class="formacao__container">Dev Media</li>
+                        <li class="formacao__container">Uniasselvi</li>
                     </ul>
                 </div>
             </section> 
         </main>
         <footer>
             <section id="contato">
-                <h2>Contato</h2>
-                <p>Quer entrar em contato comigo?</p>
-                <p>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="button" value="Enviar Mensagem">
-            </section>
+                <div class="contato__container">
+                    <img class="contato__imagem" src="assets/telefone.png" alt="">
+                    <div informacoes__contato>
+                        <h2 class="contato__titulo">Contato</h2>
+                        <p class="contato__paragrafo">Quer entrar em contato comigo?</p>
+                        <p class="contato__paragrafo">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+                        <ul class="inputs__container">
+                            <li><input class="input__ajuste" type="text" name="" id=""></li>
+
+                            <li><input class="input__ajuste" type="text" name="" id=""></li>
+                            <li><input class="input__ajuste" type="text" name="" id=""></li>
+
+                            <li><input class="input__ajuste__maior" type="text" name="" id=""></li>
+
+                            <li><input class="input__ajuste__menor" type="button" value="Enviar Mensagem"></li>
+                        </ul>
+                    </div>
+                </div>
+                </section>
+            </div>
             <div class="rodape">
-                <p>2024 - Desenvolvido por Diego  Vieira</p>
+                <p class="rodape__paragrafo">Desenvolvido por Diego  Vieira</p>
+                <p class="rodape__paragrafo">2024</p>
             </div>
         </footer>
     </body>

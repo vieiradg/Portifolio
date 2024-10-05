@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/*Hero edit*/
+
+.hero__gradiente {
+    width: 100%;
+    height: 950px;
+    background-color:  rgb(42, 3, 59);
+    background-image: radial-gradient(circle, rgba(223, 20, 189, 0.301), rgb(42, 3, 59));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 1300px;
+    height: 500px;
+    gap: 20px;
+}
+
+.hero__topo {
+    width: 600px;
+    height: 80px;
+    color: rgba(255, 255, 255, 0.493);
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-left: 64px;
+ 
+}
+
+h1, h2 {
+    width: auto;
+    height: auto;
+    font-size: 12.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.788);
+    padding-left: 64px;
+    line-height: 150px;
+}
+
+.hero__alinhar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.hero__img {
+    height: 100px;
+    transition: transform 1s;
+    transform: translateX(0) scale(0.5);
+    cursor: pointer;
+}
+
+.hero__img:hover,
+.hero__img:focus {
+  background: rgba(219, 204, 219, 0.295);
+  transform: translateX(10px) scale(1.2);
+  border-radius: 15%;
+}
+
+.hero__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+}
+
+.hero__paragrafo__container {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hero__paragrafo {
+    width: 350px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.650);
+    text-align: left;
+}
+
+/*  Projetos edit */
+
+.projetos {
+
+}
+
+/*  sobremim edit */
+
+.sobremim {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(42, 3, 59, 0.705);
+}
+
+.sobremim__container {
+    width: 1300px;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sobremim__texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobremim__texto > *:nth-child(2),
+.sobremim__texto > *:nth-child(3),
+.sobremim__texto > *:nth-child(4) {
+    margin-bottom: 32px;
+}
+
+.sobremim__span {
+    display: flex;
+    align-items: center;
+}
+
+.sobremim__span__paragrafo {
+    width: 140px;
+    height: 25px;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.img {
+    width: 50px;
+    position: relative;
+    top: -17px;
+    right: 25px;
+}
+
+.sobremim__titulo {
+    width: 230px;
+    height: 50px;
+    font-size: 42px;
+}
+
+.sobremim__paragrafo  {
+    width: 750px;
+    text-align: left;
+}
+
+.sobremim__links {
+    display: flex;
+    flex-direction: row
+}
+
+.sobremim__foto {
+    width: 450px;
+    height: 700px;
+    border-radius: 5%;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px 10px;
+}
+
+/*  Contato edit */
+
+.contato {
+
+}
+
+/* edit geral */
+
+ul {
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* Para laptops maiores e monitores de desktop padrão - 1366px a 1920px */
+@media (min-width: 1366px) and (max-width: 1920px) {
+    .hero__alinhar {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px; /* Para ajustar a distância entre os ícones da ul e o h1/h2 */
+    }
+
+    .hero__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px; /* Ajusta o espaçamento entre os itens */
+        width: auto; /* Ajusta a largura para manter a proporção */
+    }
+
+    .hero__img {
+        height: 80px;
+    }
+
+    .sobremim {
+        min-height: 100vh; /* Ajusta para ocupar o espaço completo da tela */
+        background-size: cover; /* Garante que o fundo cubra toda a área */
+    }
+}
+
+/* Para laptops e desktops pequenos - 1024px a 1366px */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .hero__alinhar {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .hero__links {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        width: auto;
+    }
+
+    .hero__img {
+        height: 70px;
+    }
+
+    .sobremim {
+        min-height: 100vh;
+        background-size: cover;
+    }
+
+    .sobremim__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobremim__foto {
+        width: 280px;
+        height: 400px;
+    }
+}
+
+/* Para tablets - 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Para dispositivos móveis maiores - 480px a 767px */
+@media (max-width: 767px) {
+
+}
+
+/* Para pequenos dispositivos móveis (smartphones) - 320px a 480px */
+@media (max-width: 480px) {
+
+}

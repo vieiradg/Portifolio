@@ -3,9 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
 
-* {
+*, ul, a {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
     box-sizing: border-box;
 }
 
@@ -74,9 +76,7 @@ h1, h2 {
 
 .hero__img:hover,
 .hero__img:focus {
-  background: rgba(219, 204, 219, 0.295);
   transform: translateX(10px) scale(1.2);
-  border-radius: 15%;
 }
 
 .hero__links {
@@ -105,8 +105,34 @@ h1, h2 {
 /*  Projetos edit */
 
 .projetos {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente dentro da seção */
+}
+
+.exibicao {
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    flex-direction: row; 
+}
+
+.exibicao__foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 
 }
+
+/* Estilo opcional para a imagem */
+.exibicao img {
+    width: 100%;           /* Faz a imagem ocupar toda a largura do item */
+    height: 100%;          /* Mantém a proporção da imagem */
+}
+
 
 /*  sobremim edit */
 
@@ -188,17 +214,74 @@ h1, h2 {
 /*  Contato edit */
 
 .contato {
-
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* edit geral */
-
-ul {
-    list-style: none;
+.contato__container {
+    width: 1440px;
+    height: 680px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding-top: 64px;
 }
 
-a  {
-    text-decoration: none;
+.contato__imagem {
+    width: 464px;
+    height: 593px;
+}
+
+.contato__titulo {
+    width: 123px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: left;
+}
+
+.contato__paragrafo {
+    width: 656px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 18.78px;
+    text-align: left;
+}
+
+.inputs__container {
+    width: 656px;
+    height: 397px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.input__ajuste {
+    width: 656px;
+    height: 56px;
+    padding-top: 16px;
+    border-radius: 4px;
+}
+
+.input__ajuste__menor {
+    width: 165px;
+    height: 51px;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #2A7AE4;
+}
+
+.input__ajuste__maior {
+    width: 656px;
+    height: 133px;
+    padding-top: 16px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+
 }
 
 

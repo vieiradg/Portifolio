@@ -3,58 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/icons8-portfolio-48.png">
     <title>Portifólio</title>
 </head>
 <body>
+    <header id="topo">
+        <nav>
+            <h3>Portifólio</h3>
+            <ul class="navegacao">
+                <li><a href="#topo">Inicio</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#sobre__mim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
     <main>
         <div class="hero__gradiente">
-            <section class="hero">
+            <section id="hero">
                 <span class="hero__topo">Olá, eu sou Diego Vieira</span>
                 <div class="hero__alinhar">
                     <h1>REACT</h1>
                     <ul class="hero__links">
-                        <li><a href="https://github.com/vieiradg" target="_blank"><img class="hero__img" src="assets/icons8-github-50.png" alt="Icone do Github"></a></li>
-                        <li><a href="https://www.linkedin.com/in/vieiradg/" target="_blank"><img class="hero__img" src="assets/icons8-linkedin-50.png" alt="Icone Linkedin"></a></li>
-                        <li><a href="#" target="_blank"><img class="hero__img" src="assets/icons8-curriculum-64.png" alt="Icone do currículo"></a></li>
+                        <li><a href="https://github.com/vieiradg" target="_blank"><img class="hero__img" src="assets/icons8-github-50 (3).png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/vieiradg/" target="_blank"><img class="hero__img" src="assets/icons8-linkedin-50 (3).png" alt="Icone Linkedin"></a></li>
+                        <li><a href="https://drive.google.com/file/d/1rVDzfyQ1pPG-5WNdaDPcfIWyaZtBI2NJ/view?usp=sharing" target="_blank"><img class="hero__img" src="assets/icons8-curriculum-64 (4).png" alt="Icone do currículo"></a></li>
                     </ul>
                 </div>
                 <h2>DEVELOPER</h2>
                 <section class="hero__paragrafo__container">
-                    <p class="hero__paragrafo">Tenho 27 anos e sou desenvolvedor frontend com 6 meses de experiencia fazendo interfaces responsivas. Eu gosto de resolver problemas usando design e tecnologia.</p>
+                    <p class="hero__paragrafo">Tenho 27 anos e sou desenvolvedor frontend com 6 meses de experiencia fazendo interfaces responsivas.</p>
                 </section>
             </section>
         </div>
-        <section class="projetos">
+
+
+        <section id="projetos" class="hidden">
             <ul class="exibicao">
                 <li class="exibicao__foto">
                     <img src="assets/tablet e cel (2).png" alt="">
                     <p>lorem</p>
                     <div>
-                        <button>deploy</button>
-                        <button>repositório</button>
+                        <a href=""><button class="botao__projetos">deploy</button></a>
+                        <a href=""><button class="botao__projetos">repositório</button></a>
                     </div>
                 </li>
                 <li class="exibicao__foto">
                     <img src="assets/tablet e cel (2).png" alt="">
                     <p>lorem</p>
                     <div>
-                        <button>deploy</button>
-                        <button>repositório</button>
+                        <a href=""><button class="botao__projetos">deploy</button></a>
+                        <a href=""><button class="botao__projetos">repositório</button></a>
                     </div>
                 </li>
                 <li class="exibicao__foto">
                     <img src="assets/tablet e cel (2).png" alt="">
                     <p>lorem</p>
                     <div>
-                        <button>deploy</button>
-                        <button>repositório</button>
+                        <a href=""><button class="botao__projetos">deploy</button></a>
+                        <a href=""><button class="botao__projetos">repositório</button></a>
                     </div>
                 </li>
             </ul>
         </section>
-        <section class="sobremim">
+
+        <section id="skills" class="hidden">
+            <div class="alinhar">
+                <div class="skills__container">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul class="hardskills">
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Git & GitHub</li>
+                        <li>Conhecimentos em Metodolodias Ageis</li>
+                    </ul>
+                </div>
+                <div class="skills__container">
+                    <h3>Habilidades Comportamentais</h3>
+                    <ul class="softskills">
+                        <li>
+                            <h4>Comunicação eficaz</h4>
+                            <p>Expressar idéias de forma clara e concisa, facilitando a colaboração com colegas de equipe e clientes.</p>
+                        </li>
+                        <li>
+                            <h4>Trabalho em equipe</h4>
+                            <p>Trabalhar de forma colaborativa em equipe, contribuindo com habilidades e idéias para alcançar objetivos em comum</p>
+                        </li>
+                        <li>
+                            <h4>Adaptabilidade</h4>
+                            <p>Se adaptar a novos desafios e ambientes de trabalho, lidando de forma eficaz com mudanças e imprevistos</p>
+                        </li>
+                        <li>
+                            <h4>Proatividade</h4>
+                            <p>Buscar novas oportunidades, assumir responsabilidades e agir antecipadamente para evitar problemas</p>
+                        </li>
+                        <li>
+                            <h4>Organização e gerenciamento do tempo</h4>
+                            <p>Organizar tarefas, estabelecer prioridades e gerenciar o tempo de forma eficaz para cumpir prazos e objetivos</p>
+                        </li>
+                        <li>
+                            <h4>Resiliencia</h4>
+                            <p>Enfrentar desafios e adversidades com determinação e otimismo, buscando aprender e crescer com as experiencias</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills__container">
+                    <h3>O que eu posso fazer por você?</h3>
+                    <ul class="habilidades">
+                        <li>
+                            <h4>Criação de sites</h4>
+                            <p>Transformo suas idéias em um site profissional e atrativo, focado em transmitir sua mensagem de forma clara e eficaz</p>
+                        </li>
+                        <li>
+                            <h4>Criação de landing pages</h4>
+                            <p>Crio páginas impactantes e otimizadas paraconverter visitantes em clientes.  Usando técnicas de design e persuasão</p>
+                        </li>
+                        <li>
+                            <h4>Otimização de SEO</h4>
+                            <p>Maximizo a visibilidade do seu site nos mecanismos de busca, implementando estratégias avançadas de SEO para aumentar o trafego orgânico e melhorar seu ranking</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="sobre__mim" class="hidden">
             <div class="sobremim__container">
                 <div class="sobremim__texto">
                     <span class="sobremim__span">
@@ -65,9 +147,9 @@
                     <p class="sobremim__paragrafo">Eu sou o Diego Vieira, tenho 27 anos e moro em São Gonçalo, Rio de Janeiro. Há 6 meses decidi mudar de carreira e me dedicar ao mundo da programação, com foco em frontend. Desde então, venho criando vários sites e expandindo meu portfólio no <strong>GitHub</strong>, sempre buscando melhorar e explorar novas ideias de interfaces.</p>
                     <p class="sobremim__paragrafo">Desenvolver websites que sejam ao mesmo tempo robustos e minimalistas é algo que realmente me empolga. Nesses meses, aprendi bastante sobre <strong>React, HTML, CSS e JavaScript</strong>, e a cada projeto que faço, tento levar a qualidade a outro nível. Se quiser ver meus projetos, dá uma olhada no <strong>GitHub</strong>. Também estou no <strong>LinkedIn</strong>, onde curto trocar ideias sobre desenvolvimento frontend. No momento, estou focado em melhorar ainda mais minhas habilidades em <strong>React e JavaScript</strong>.</p>
                     <ul class="sobremim__links">
-                        <li><a href="https://github.com/vieiradg" target="_blank"><img class="hero__img" src="assets/icons8-github-50 (1).png" alt="Icone do Github"></a></li>
-                        <li><a href="https://www.linkedin.com/in/vieiradg/" target="_blank"><img class="hero__img" src="assets/icons8-linkedin-50 (1).png" alt="Icone Linkedin"></a></li>
-                        <li><a href="#" target="_blank"><img class="hero__img" src="assets/icons8-curriculum-64 (1).png" alt="Icone do currículo"></a></li>
+                        <li><a href="https://github.com/vieiradg" target="_blank"><img class="hero__img" src="assets/icons8-github-50 (2).png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/vieiradg/" target="_blank"><img class="hero__img" src="assets/icons8-linkedin-50 (2).png"></a></li>
+                        <li><a href="https://drive.google.com/file/d/1rVDzfyQ1pPG-5WNdaDPcfIWyaZtBI2NJ/view?usp=sharing" target="_blank"><img class="hero__img" src="assets/icons8-curriculum-64 (3).png"></a></li>
                     </ul>
                 </div>
                 <figure>
@@ -75,24 +157,51 @@
                 </figure>
             </div>
         </section>
-        <section class="contato">
+
+
+        <section id="formacao" class="hidden">
+            <ul class="formacao__container">
+                <li class="formacao__estudos">
+                    <p>Análise e desenvolvimento de sistemas | 3º Periodo | Uniasselvi</p>
+                </li>
+                <li class="formacao__estudos">
+                    <p>Dev Media</p>
+                </li>
+                <li class="formacao__estudos">
+                    <p>Bootcamp de front-end | Alura + Oracle Next Education</p>
+                </li>
+                <li class="formacao__estudos">
+                    <p>Curso em video</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="contato" class="hidden">
             <div class="contato__container">
                 <img class="contato__imagem" src="assets/telefone.png" alt="">
-                <div informacoes__contato>
+                <div class="informacoes__contato">
                     <h2 class="contato__titulo">Contato</h2>
                     <p class="contato__paragrafo">Quer entrar em contato comigo?</p>
-                    <p class="contato__paragrafo">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+                    <p class="contato__paragrafo">Preencha o formulário a baixo que eu entrarei em contato o mais rápido possível.</p>
                     <ul class="inputs__container">
-                        <li><input class="input__ajuste" type="text" name="" id=""></li>
-                        <li><input class="input__ajuste" type="text" name="" id=""></li>
-                        <li><input class="input__ajuste" type="text" name="" id=""></li>
-                        <li><input class="input__ajuste__maior" type="text" name="" id=""></li>
-                        <li><input class="input__ajuste__menor" type="button" value="Enviar Mensagem"></li>
+                        <li><textarea class="ajuste" id="" placeholder="digite seu nome aqui"></textarea></li>
+                        <li><textarea class="ajuste" id="" placeholder="digite seu número aqui"></textarea></li>
+                        <li><textarea class="ajuste" id="" placeholder="digite seu email aqui"></textarea></li>
+                        <li><textarea class="ajuste__maior" id="" placeholder="Escreva sua mensagem aqui"></textarea></li>
+                        <li><a href="#"><input class="input__ajuste__menor" type="button" value="Enviar mensagem"></a></li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <section class="subir">
+            <a href="#topo"><input type="button" value="Topo"></a>
+        </section>
     </main>
-    <script src=""></script>
+    <footer class="hidden">
+        <p>Desenvolvido por Diego Vieira</p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

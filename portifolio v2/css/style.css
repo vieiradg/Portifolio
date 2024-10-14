@@ -47,6 +47,11 @@ nav {
     left: 0;
     border-bottom: 3px solid #222831;
     z-index: 1000;
+    color: #00ADB5;
+}
+
+h3 a {
+    color: #00ADB5;
 }
 
 .navegacao {
@@ -59,13 +64,14 @@ nav {
 .navegacao li a {
     display: block;
     padding: 10px;
-    color: #222831;
+    color: #00ADB5;
     border-bottom: 1px solid transparent; 
     transition: border-color 0.3s ease; 
 }
 
 .navegacao li a:hover {
     border-color: #222831;
+    border-color: #00ADB5;
 }
 
 
@@ -107,7 +113,7 @@ h1, h2 {
 
 .hero__img {
     height: 100px;
-    transition: transform 1s;
+    transition: 1s;
     transform: translateX(0) scale(0.5);
     cursor: pointer;
 }
@@ -133,8 +139,8 @@ h1, h2 {
 }
 
 .hero__paragrafo {
-    width: 350px;
-    line-height: 20px;
+    width: 30%;
+    line-height: 1.50rem;
     color: #eeeeeec4;
     text-align: left;
 }
@@ -172,12 +178,16 @@ h1, h2 {
 .botao__projetos {
     padding: 21px 45px;
     border-radius: 10px;
-    background-color: #00ADB5;
+    background-color:  #00acb5d0;
     font-size: 1.2rem;
     font-weight: 400;
     cursor: pointer;
     border: 2px solid #222831;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.botao__projetos:hover {
+    background-color: #00ADB5;
 }
 
 
@@ -222,12 +232,12 @@ h1, h2 {
 
 .hardskills li {
     padding: 10px;
-    background-color: #00ADB5;
+    background-color: #00acb5d0;
     border-radius: 30px;
 }
 
 .softskills li, .habilidades li {
-    width: 250px;
+    width: 13%;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -235,9 +245,13 @@ h1, h2 {
     align-items: center;
     padding: 10px;
     gap: 10px;
-    background-color: #00ADB5;
+    background-color: #00acb5d0;
     color: #222831;
     border-radius: 30px;
+}
+
+.hardskills li:hover, .softskills li:hover, .habilidades li:hover {
+    background-color: #00ADB5;
 }
 
 
@@ -294,13 +308,12 @@ h1, h2 {
 }
 
 .sobremim__titulo {
-    width: 230px;
     height: 50px;
     font-size: 42px;
 }
 
 .sobremim__paragrafo  {
-    width: 750px;
+    width: 90%;
     text-align: left;
 }
 
@@ -310,9 +323,9 @@ h1, h2 {
 }
 
 .sobremim__foto {
-    max-width: 100%;
+    max-width: 600px;
     height: 600px;
-    border-radius: 5%;
+    border-radius: 15%;
     object-fit: cover;
     box-shadow: 10px 10px 10px 10px;
 }
@@ -343,7 +356,7 @@ h1, h2 {
 .formacao__estudos  {
     flex: 1 1 350px;
     gap: 32px;
-    width: 350px;
+    width: 40%;
     height: 550px;
     padding: 20px;
     margin: 0 auto;
@@ -399,8 +412,8 @@ h1, h2 {
 }
 
 .contato__paragrafo {
-    font-size: 16px;
-    line-height: 18.78px;
+    font-size: 1.10rem;
+    line-height: 1.25rem;
 }
 
 .inputs__container {
@@ -415,7 +428,7 @@ h1, h2 {
 }
 
 .ajuste {
-    width: 400px;
+    width: 62%;
     height: 30px;
     border-radius: 4px;
     background-color: #EEEEEE;
@@ -424,7 +437,7 @@ h1, h2 {
 
 
 .ajuste__maior {
-    width: 400px;
+    width: 62%;
     height: 120px;
     border-radius: 4px;
     background-color:  #EEEEEE;
@@ -434,10 +447,14 @@ h1, h2 {
 .input__ajuste__menor {
     padding: 21px 45px;
     border-radius: 10px;
-    background-color: #00ADB5;
+    background-color:  #00acb5d0;
     cursor: pointer;
     border: 2px solid #222831;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.input__ajuste__menor:hover {
+    background-color: #00ADB5;
 }
 
 
@@ -454,12 +471,15 @@ h1, h2 {
 .subir a input {
     color: #222831;
     padding: 10px 20px;
-    background-color: #00ADB5;
+    background-color:  #00acb5d0;
     border-radius: 25px;
-    font-weight: 600;
+    font-weight: 500;
     border: 2px solid #222831;
 }
 
+.subir a input:hover {
+    background-color: #00ADB5;
+}
 
 /* Footer */
 footer {
